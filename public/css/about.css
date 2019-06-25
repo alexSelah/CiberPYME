@@ -1,0 +1,166 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:oswald, helvetica, arial, sans-serif;
+	background: #FFFFFF;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position:0 0px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width:1000px;
+	margin:auto;
+}
+
+/*#particles-js {
+	width: 100%;
+	height:100%;
+	position: fixed;
+	background:rgba(0,0,0,.8);
+}*/
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+	position:absolute; 
+	width: 100%; 
+	height: 100%; 
+	background-color: #000000; 
+	background-image: url(""); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: 50% 50%; 
+} 
+
+/* ---- stats.js ---- */ 
+.count-particles{ 
+	background: #000022; 
+	position: absolute; 
+	top: 48px; 
+	left: 0; 
+	width: 80px; 
+	color: #13E8E9; 
+	font-size: .8em; 
+	text-align: left; 
+	text-indent: 4px; 
+	line-height: 14px; 
+	padding-bottom: 2px; 
+	font-family: Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+} 
+
+.js-count-particles{ 
+	font-size: 1.1em; 
+} 
+
+#stats, 
+.count-particles{ 
+	-webkit-user-select: none; 
+	margin-top: 5px; 
+	margin-left: 5px; } 
+	
+#stats{ 
+	border-radius: 3px 3px 0 0; 
+	overflow: hidden; 
+} 
+
+.count-particles{ 
+	border-radius: 0 0 3px 3px; 
+}
+
+
+/* Cursor */
+.typed-cursor {
+	opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+
+}
+
+
+
+header {
+	position: relative;
+	height: auto;
+}
+
+header .menu {
+	background:rgba(255,255,255,.7);
+	overflow: hidden;
+}
+
+header .logo {
+	color:rgba(0,0,0,.8);
+	float: left;
+	font-size:30px;
+	line-height:80px;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	color:rgba(0,0,0,.8);
+	text-decoration: none;
+	display: block;
+	font-size:18px;
+	padding:0 20px;
+	line-height:80px;
+}
+
+header nav ul li:hover {
+	background:rgba(0,0,0,.8);
+	border-bottom: inset 5px solid #fff;
+}
+
+header nav ul li a:hover {
+	color:#fff;
+}
+
+/* Texto Inicial */
+.texto {
+	padding:100px 0;
+	text-align: center;
+	color:#00ff25;
+	font-family: Lucida Console;
+	position: relative;
+	font-weight: 300;
+}
+
+.texto h2, .texto p {
+	background: rgba(0,0,0,.8);
+	display:inline-block;
+	padding:10px 20px;
+}
+
+.texto h2 {
+	font-size:40px;
+	letter-spacing: 2.5px;
+	font-weight: normal;
+}
+
+.texto p {
+	font-size:20px;
+	letter-spacing: 2.5px;
+}
