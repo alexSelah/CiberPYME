@@ -1,0 +1,8 @@
+[user]
+	name = Alejandro Campos Fuentes
+	email = acamfue@gmail.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
