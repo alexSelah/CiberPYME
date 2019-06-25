@@ -47,8 +47,8 @@ Al ser un proyecto realizado en tan solo dos meses, desde cero, esperoo que cont
 El proyecto ha sido desarrollado en dos meses, aprendiendo **Laravel** desde cero
 
 * [Laravel](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [DataTables](https://datatables.net/) - las dos primeras vistas están desarrolladas con DataTables
+* [typed.js](https://github.com/mattboldt/typed.js/) - Usado para el "huevo de pascua" de la página principal, que lleva a **About**.
 
 ## Contribuyendo 🖇️
 
