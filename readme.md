@@ -20,12 +20,12 @@ Para la instalación de un proyecto necesitamos una máquina virtual XAMPP. Ve l
 Aquí está contenido todo el código fuente del proyecto en Laravel. Pero se puede instalar una copia completamente funcional en un servidor local XAMPP o en un 
 Para instalar una copia del programa CiberPYME y ejecutarla en local se deben seguir los siguientes pasos, adaptándolos al entorno que se haya escogido.
 
-1.- Crear un servidor local con XAMPP
-2.- Subir la carpera ciberpyme a la carpeta HTDOCS de XAMPP
-3.- Abrir la interfaz de MySQL y crear una nueva base de datos llamada "ciberpyme".
-4.- Importar el archivo SQL en la base de datos a través de MySQL.
-5.- Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT.
-6.- Modificar el .env de la carpeta raiz de ciberpyme para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
+1. Crear un servidor local con XAMPP
+2. Subir la carpera ciberpyme a la carpeta HTDOCS de XAMPP
+3. Abrir la interfaz de MySQL y crear una nueva base de datos llamada "ciberpyme".
+4. Importar el archivo SQL en la base de datos a través de MySQL.
+5. Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT.
+6. Modificar el .env de la carpeta raiz de ciberpyme para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
 
 Se incluyen los ejemplos de HTACCESS y .env para un proyecto local y para un servidor en internet. Se pueden encontrar todos los archivos necesarios para la configuración y para la Base de Datos en la carpeta "Archivos de Configuración" de Github
 
