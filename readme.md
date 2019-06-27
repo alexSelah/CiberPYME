@@ -1,4 +1,4 @@
-# Título del Proyecto
+# CiberPYME
 
 CiberPYME ha sido creado como proyecto de Fin de Grado para la Universidad Isabel I de Burgos por mi. Lo presenté como parte de un proyecto más grande que implicaba una Guía para la creación de un Plan de Seguridad Informática en un entorno empresarial mediano o pequeño (autónomos, trabajadores, pymes, etc).
 
@@ -74,9 +74,9 @@ Esta es la primera versión del programa. No se si se realizarán más o el proy
 
 Este proyecto está bajo la Licencia misma de Laravel, la MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles
 
-## Expresiones de Gratitud 🎁
+## Gracias a 🎁
 
 * Primero, gracias a mi tutor del proyecto, Juan Agustín Fraile. Ha sido un apoyo y una ayuda dándome ánimos. 📢
-* Después a mi amigo Jose Antonio Moreno. Te debo una cerveza bien fresquita 🍺. 
+* Después a mi amigo Morezno. Te debo una cerveza bien fresquita 🍺. 
 * Por supuesto a mi familia, que me ha soportado después de tantas horas de programación y estudio 🤓.
 * Por último a la [Universidad Isabel I](https://ui1.es) que es donde desarrollé todo mi potencial.
