@@ -77,6 +77,5 @@ Este proyecto está bajo la Licencia misma de Laravel, la MIT - mira el archivo 
 ## Gracias a 🎁
 
 * Primero, gracias a mi tutor del proyecto, Juan Agustín Fraile. Ha sido un apoyo y una ayuda dándome ánimos. 📢
-* Después a mi amigo Morezno. Te debo una cerveza bien fresquita 🍺. 
 * Por supuesto a mi familia, que me ha soportado después de tantas horas de programación y estudio 🤓.
 * Por último a la [Universidad Isabel I](https://ui1.es) que es donde desarrollé todo mi potencial.
