@@ -4,7 +4,7 @@ CiberPYME ha sido creado como proyecto de Fin de Grado para la Universidad Isabe
 
 Para desarrollar el proyecto se ha usado el [frameword Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. El programa tiene la misma [licencia MIT](./LICENCIA.txt) que Laravel.
 
-CiberPYME sirve para realizar un Análisis de Riesgos Sencillos basándonos en la metodología Magerit que edita el [Edita: © Ministerio de Hacienda y Administraciones Públicas](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Magerit.html). Al ser una prueba de concepto me he tomado algunas licencias, sobretodo en el cálculo del peso de las salvaguardas y las vulnerabilidades (suman un nivel de riesgo o bajan un nivel de riesgo, en lugar de hacer cálculos más complicados).
+CiberPYME sirve para realizar un Análisis de Riesgos Sencillos basándonos en la metodología Magerit que edita el [Ministerio de Hacienda y Administraciones Públicas](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Magerit.html). Al ser una prueba de concepto me he tomado algunas licencias, sobretodo en el cálculo del peso de las salvaguardas y las vulnerabilidades (suman un nivel de riesgo o bajan un nivel de riesgo, en lugar de hacer cálculos más complicados).
 
 ![Pantalla principal de CiberPYME](./public/images/capturasprograma/inicioSP.png) 
 
@@ -17,7 +17,7 @@ Para la instalación de un proyecto necesitamos una máquina virtual XAMPP. Ve l
 
 ### Instalación 🔧
 
-Aquí está contenido todo el código fuente del proyecto en Laravel. Pero se puede instalar una copia completamente funcional en un servidor local XAMPP o en un 
+Aquí está contenido todo el código fuente del proyecto en Laravel. Pero se puede instalar una copia completamente funcional en un servidor local XAMPP o en un servidor de internet.
 Para instalar una copia del programa CiberPYME y ejecutarla en local se deben seguir los siguientes pasos, adaptándolos al entorno que se haya escogido.
 
 1. Crear un servidor local con XAMPP
@@ -39,15 +39,15 @@ Se incluyen los ejemplos de HTACCESS y .env para un proyecto local y para un ser
 - Exportar en PDF datos de una tabla con PHP y Javascript.
 - Resaltar las filas de una tabla que concuerdan con un índice de Riesgo. Se señalan en rojo en el Análisis de Riesgos.
 
-Al ser un proyecto realizado en tan solo dos meses, desde cero, esperoo que contenga bugs y fallos facilmente solucionables. Además, una refactorización no le vendría mal.
+Al ser un proyecto realizado en tan solo dos meses, desde cero, espero que contenga bugs y fallos fácilmente solucionables. Además, una refactorización no le vendría mal.
 
 
 ## Construido con 🛠️
 
-El proyecto ha sido desarrollado en dos meses, aprendiendo **Laravel** desde cero
+El proyecto ha sido desarrollado en dos meses, aprendiendo **Laravel** desde cero. Se ha usado las siguientes librerías y frameworks.
 
 * [Laravel](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [DataTables](https://datatables.net/) - las dos primeras vistas están desarrolladas con DataTables
+* [DataTables](https://datatables.net/) - Las dos primeras vistas están desarrolladas con DataTables
 * [typed.js](https://github.com/mattboldt/typed.js/) - Usado para el "huevo de pascua" de la página principal, que lleva a **About**.
 
 ## Contribuyendo 🖇️
