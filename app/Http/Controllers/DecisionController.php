@@ -88,6 +88,47 @@ class DecisionController extends Controller
         //$ArraySalvavulneras[] = array('id_amenaza'=>null ,'totalSV' => 0, 'Salvaguardas' => 0, 'Vulnerabilidades' => 0);
 
         $resultado = array();
+        
+        $itemsSV = array();
+        foreach ($activos as $activo) {
+            $amenazas = $activo->amenazas()->get();
+            foreach ($amenazas as $amenaza) {
+                $salvavulneras = $amenaza->salvavulneras()->get();
+                foreach ($salvavulneras as $salvavulnera) {
+                    $itemsSV[] = array(
+                        'id' => $salvavulnera->id,
+                        'tipo' => $salvavulnera->tipo,
+                        'descripcion' => $salvavulnera->descripcion,
+                        'id_amenaza' => $amenaza->id_amenaza    
+                    );
+                }
+            }
+        }
+
+        $arraySalvavulneras = Collection::make();
+        $collection = Collection::make($itemsSV);
+        $grouped = $collection->mapToGroups(function ($item, $key) {
+            return [$item['id_amenaza'] => $item['tipo']];
+        });
+        foreach ($grouped as $key => $value) {
+            //dd($grouped);
+            $objeto=Array ('id_amenaza' => $key,'totalSV' =>0, 'Salvaguardas' =>0, 'Vulnerabilidades'=>0);
+            foreach ($value as $value2) {
+                if($value2 === 'S'){
+                    $objeto['Salvaguardas'] = $objeto['Salvaguardas'] + 1;
+                    $objeto['Vulnerabilidades'] = $objeto['Vulnerabilidades'];
+                    $objeto['totalSV'] = $objeto['totalSV'] - 1;
+                }
+                if($value2 === 'V'){
+                    $objeto['Salvaguardas'] = $objeto['Salvaguardas'];
+                    $objeto['Vulnerabilidades'] = $objeto['Vulnerabilidades'] + 1;
+                    $objeto['totalSV'] = $objeto['totalSV'] + 1;
+                }
+            }
+            //dd($objeto);
+            $arraySalvavulneras->push($objeto);
+        }
+
         $itemsSV = array();
         foreach ($activos as $activo) {
 
@@ -95,13 +136,15 @@ class DecisionController extends Controller
             foreach ($amenazas as $amenaza) {
                 $riesgos = $amenaza->riesgo()->get();
                 foreach ($riesgos as $key => $riesgo) {
-                    $riesgoCalculado = ($riesgo->probabilidad * $riesgo->impacto) + $ArraySalvavulneras[$key]['totalSV'];
-                    if($riesgoCalculado < 1){
-                        $riesgoCalculado = 1;
-                    }
-                    if($riesgoCalculado > 9){
-                        $riesgoCalculado = 9;
-                    }
+                    $asv =Collection::make( $arraySalvavulneras->where('id_amenaza',$amenaza->id_amenaza));
+                    $riesgoCalculado = ($riesgo->probabilidad * $riesgo->impacto) + $asv->first()['totalSV'];
+                        //dd($riesgoCalculado);
+                        if($riesgoCalculado < 1){
+                            $riesgoCalculado = 1;
+                        }
+                        if($riesgoCalculado > 9){
+                            $riesgoCalculado = 9;
+                        }
                     //dd($riesgo->impacto);
                     $svItemsTXT = Lang::get('text.txtS').$ArraySalvavulneras[$key]['Salvaguardas']." ".Lang::get('text.txtV').$ArraySalvavulneras[$key]['Vulnerabilidades'];
 
